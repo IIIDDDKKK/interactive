@@ -1,0 +1,125 @@
+@font-face{
+        font-family:"UniversLTStd-XBlackEx";
+        src:local(UniversLTStd-XBlackEx.otf);
+    }
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+    * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+
+    }
+    html{
+        height:100%;
+        color:#202020;
+    }
+
+    body {
+        background-color:lightgreen;
+        /*background: linear-gradient(45deg, coral, gray); */
+        font-family:"Georgia", serif;
+        font-size:2rem;
+    }
+    div{
+        margin:.5em;
+    }
+
+    h1 h2 h3 h4 h5 h6{
+        display:inline-block;
+        color:#202020;
+
+    }
+
+    nav {
+        bottom:0;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+        align-items:flex-end;
+        /*padding:1em;*/
+/*        margin:.5em;
+*/    }
+    li {
+        color:#202020;
+    }
+    p{
+        color:#202020;
+    }
+
+
+    ul, ol{
+        list-style-type: none;
+
+    }
+
+    a{
+        text-decoration:none;
+        color:#202020;
+    }
+    a:hover{
+        color:lightgreen;
+        background-color:#202020;
+    }
+
+    .main{
+        margin:.5em;
+    }
+    .menu {
+        padding:0;
+        margin:.5em;
+    }
+    .content{
+        margin:.5em;
+        max-width:40em;
+    }
+
+    .menu li{
+        display:inline-block;
+        /*padding-right:4em;*/
+        vertical-align: top;
+        position:relative;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown li:hover{
+        color:lightgreen;
+        background-color:#202020
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #202020;
+        color:lightgreen;
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color:lightgreen;
+        padding:2px;
+
+}
+    .dropdown-content a:hover{
+        background-color: lightgreen;
+        color:#202020;
+
+}
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;;
+        -webkit-animation: fadeIn .5s;
+
+    }

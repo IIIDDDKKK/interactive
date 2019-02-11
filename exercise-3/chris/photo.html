@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CHRISTOPHER RICE</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+<style>
+
+@font-face{
+        font-family:"UniversLTStd-XBlackEx";
+        src:local(UniversLTStd-XBlackEx.otf);
+    }
+@font-face{
+        font-family:"UniversLTStd-BoldEx";
+        src:local(UniversLTStd-BoldEx.otf);
+    }
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@media screen and (min-width: 400px) {
+  nav {
+    display: block;
+  }
+}
+
+    * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+    }
+    html{
+        height:100%;
+    }
+
+    body {
+        background-color:coral;
+        /*background: linear-gradient(45deg, coral, gray); */
+        font-family:"UniversLTStd-BoldEx", sans-serif;
+    }
+
+    h1 {
+        font-family:"UniversLTStd-XBlackEx",sans-serif;
+        display:inline-block;
+        color:#202020;
+
+    }
+
+    nav {
+        display:inline-block;
+    }
+    li {
+        color:#202020;
+    }
+    p{
+        color:#202020;
+        /*text-align:justify;*/
+        font-size:.8em;
+    }
+
+
+    ul{
+        list-style-type: none;
+
+    }
+
+    a{
+        text-decoration:none;
+        color:#202020;
+    }
+    a:hover{
+        color:coral;
+        background-color:#202020;
+    }
+
+    .main{
+        margin:.5em;
+    }
+    .menu {
+        padding:0;
+        margin:.5em;
+    }
+    .content{
+        margin:.5em;
+        max-width:50em;
+        -moz-column-count:2;
+        -moz-column-gap:1em;
+        -webkit-column-count:2;
+        -webkit-column-gap:1em;
+        column-count:2;
+        column-gap:1em;
+    }
+    .gallery{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+    }
+    .gallery img{
+        max-height: 150px;
+        padding: 10px;
+    }
+
+    .menu li{
+        display:inline-block;
+        padding-right:4em;
+        vertical-align: top;
+        position:relative;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown li:hover{
+        color:coral;
+        background-color:#202020
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #202020;
+        color:coral;
+        z-index: 1;
+        margin:0;
+        padding:0;
+    }
+    .dropdown-content a{
+        color:coral;
+        padding:2px;
+
+}
+    .dropdown-content a:hover{
+        background-color: coral;
+        color:#202020;
+
+}
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;;
+        -webkit-animation: fadeIn .5s;
+
+    }
+
+
+</style>
+  </head>
+<body>
+    <div class="main">
+<h1>CHRISTOPHER RICE</h1>
+</div>
+<nav>
+    <ul class="menu">
+    <li><a href="index.html">ABOUT</a></li>
+    <li class="dropdown"><a href="projects.html">PROJECTS</a>
+        <div class="dropdown-content">
+        <ul>
+        <li><a href="gehl.html">Gehl Studio</a></li>
+        <li><a href="ramp.html">R A M P</a></li>
+        <li><a href="thread.html">Thread Collective</a></li>
+        <li><a href="wxy.html">W X Y</a></li>
+        <li><a href="index.html">NYC - EJA</a></li>
+        <li><a href="multiplicity.html">MultipliCITY</a></li>
+        <li><a href="pratt.html">Pratt Institute</a></li>
+        </ul>
+        </div>
+    </li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="photo.html">35MM</a></li>
+    </ul>
+</nav>
+<div class="gallery">
+    <img src="assets/1.jpg">
+    <img src="assets/2.jpg">
+    <img src="assets/3.jpg">
+    <img src="assets/4.jpg">
+    <img src="assets/5.jpg">
+    <img src="assets/6.jpg">
+    <img src="assets/7.jpg">
+    <img src="assets/8.jpg">
+    <img src="assets/9.jpg">
+</div>
+</body>
+</html>
