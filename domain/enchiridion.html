@@ -7,15 +7,24 @@
     <link rel="icon" href="#" />
 <style>
 
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 5vw;
+  }
+}
+
 @font-face {
   font-family: "TWNTYFRSTCNTRY";
   src: local("twntyfrstcntry.otf");
 }
 
+html{
+  font-family: TWNTYFRSTCNTRY, Georgia, serif;
+  font-size:4vw;
+}
+
 body{
   background: linear-gradient(lightgreen,white,lightgreen);
-  font-family: TWNTYFRSTCNTRY, Georgia, serif;
-  font-size:2.5em;
 }
 
 h1{
@@ -26,11 +35,16 @@ h2{
   text-align:center;
 }
 
-.chapters{
-  max-width:40em;
-  line-height: 1.4;
-  padding:2%;
+.header{
+  width:90vw;
 }
+
+.chapters{
+  width:90vw;
+  line-height: 1.4;
+  padding:2vw;
+}
+
 
 
 
