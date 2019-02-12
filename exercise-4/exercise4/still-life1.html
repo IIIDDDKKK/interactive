@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+
+
+@-webkit-keyframes flicker {
+
+  from {
+    transform: rotate(3deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(-3deg);
+    opacity: .85;
+  }
+  
+}
+
+
+#candle #flame {
+  -webkit-animation-duration: 0.33s;
+  -webkit-animation-name: flicker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+}
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: gold;
+		z-index:-1;
+	}
+
+	/* this is where you can style the objects in your still life */
+	#orange1{
+		background:darkorange;
+		width:7em;
+		height:7em;
+		border-radius:50%;
+		position:absolute;
+		top:8em;
+		left:10em;
+		z-index:4;
+	}
+	#orange2{
+		background:darkorange;
+		width:8em;
+		height:8em;
+		border-radius:50%;
+		position:absolute;
+		top:15em;
+		left:15em;
+		/*z-index:4;*/
+	}
+	#egg{
+		background:white;
+		width:6em;
+		height:4em;
+		border-radius:50%;
+		position:absolute;
+		top:19em;
+		left:20em;
+
+	}
+	#onion{
+		background:moccasin;
+		width:12em;
+		height:12em;
+		border-radius:50%;
+		position:absolute;
+		top:2em;
+		left:16em;
+
+
+	}
+	#candle{
+		background:white;
+		width:150px;
+		height:175px;
+		position:relative;
+		top:9em;
+		left:28em;
+		opacity:.3;
+		z-index:2;
+}
+	#wax{
+		background:purple;
+		width:100%;
+		height:50%;
+		position:absolute;
+		bottom:0;
+		z-index:3;
+	}	
+
+	#wick{
+		background:black;
+		width:4px;
+		height:20px;
+		position:absolute;
+		left:50%;
+		top:40%;
+	}
+	#flame{
+		background:orange;
+		width:1em;
+		height:2em;
+		position:absolute;
+		left:50%;
+		top:25%;
+	}
+
+
+	#book{
+		background:darkred;
+		height:200px;
+		width:300px;
+		transform:skew(-30deg);
+		position:absolute;
+		top:7em;
+		left:8em;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+<div id="book"></div>
+<div id="orange1"></div>
+<div id="onion"></div>
+<div id="orange2"></div>
+<div id="egg"></div>
+<div id="candle"><div>
+	<div id="wax"></div>
+	<div id="wick"></div>
+	<div id="flame"></div>
+			<!-- below is where you put your objects in your still life -->
+
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>
