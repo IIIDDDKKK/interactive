@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IIIIIDDDDDDDKKKKKKKK</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+<style>
+
+@-webkit-keyframes circle {
+
+  0% 100% {
+    transform: translate(0,0);
+    background-color: magenta;
+  }
+
+  25% {
+    transform: translate(1em,1em);
+    /*background-color: yellow;*/
+  }
+  50% {
+    transform: translate(-1em,1em);
+    background-color:cyan;
+  }
+  75% {
+    transform: translate(-1em,-1em);
+    /*background-color: blue;*/
+  }
+  
+}
+
+@-webkit-keyframes pupils {
+
+  0% 100% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(1em);
+  }
+  }
+
+@-webkit-keyframes landscape {
+
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-160em, -80em);
+  }
+  }
+
+ 
+body{
+  background-color:tan;
+  overflow:hidden;
+  white-space: nowrap;
+}
+
+/*CREATURE*/
+
+.cell:hover{
+    width:11em;
+    height:11em;
+    box-shadow: 0 0 2em 2em yellow;
+}
+
+.cell {
+    background:magenta;
+    width:8em;
+    height:8em;
+    border-radius:50%;
+    position:absolute;
+    animation:circle 10s ease 0s infinite normal;
+    transition-property:width,height,box-shadow;
+    transition-duration:2s; 
+    transition-timing-function:ease-in-out;
+    z-index:-1;
+
+}
+.cell.one{
+    top:8em;
+    left:10em;
+    animation-delay: 1s;
+}
+.cell.two{
+    top:4em;
+    left:9em;
+    animation-delay: 1.5s;
+
+}
+.cell.three{
+    top:10em;
+    left:13em;
+    animation-delay: 2s;
+
+}
+.cell.four{
+    top:10em;
+    left:16em;
+    animation-delay: 2.5s;
+
+}
+.cell.five{
+    top:14em;
+    left:18em;
+    animation-delay: 3s;
+
+}
+.cell.six{
+    top:17em;
+    left:21em;
+    animation-delay: 3.5s;
+
+}
+.cell.seven{
+    top:17em;
+    left:24em;
+    animation-delay: 4s;
+
+}
+.cell.eight{
+    top:17em;
+    left:28em;
+    animation-delay: 4.5s;
+
+}
+.cell.nine{
+    top:19em;
+    left:32em;
+    animation-delay: 5s;
+
+}
+.cell.ten{
+    top:18em;
+    left:34em;
+    animation-delay: 5.5s;
+
+}
+.cell.eleven{
+    top:18em;
+    left:35em;
+    animation-delay: 6s;
+
+}
+.cell.twelve{
+    top:21em;
+    left:39em;
+    animation-delay: 6.5s;
+
+}
+.cell.thirteen{
+    top:22em;
+    left:40em;
+    animation-delay: 7s;
+
+}
+.cell.fourteen{
+    top:20em;
+    left:44em;
+    animation-delay: 7.5s;
+
+}
+.cell.fifteen{
+    top:16em;
+    left:47em;
+    animation-delay: 8s;
+
+}
+.cell.sixteen{
+    top:2em;
+    left:3em;
+    animation-delay: 8.5s;
+
+}
+
+.eye{
+  width:2em;
+  height:2em;
+  background-color: white;
+  border-radius:50%;
+  position:relative;
+  display:inline-block;
+  transition-property:width,height;
+  transition-duration:.5s; 
+  transition-timing-function:ease-in-out;
+}
+
+.eye:hover{
+  width:4em;
+  height:4em;
+}
+
+.pupil{
+  width:.5em;
+  height:.5em;
+  background-color:black;
+  border-radius:50%;
+  position:relative;
+  display:inline-block;
+  transition-property:width,height;
+  transition-duration:.5s; 
+  transition-timing-function:ease-in-out;
+  animation:pupils 10s ease 0s infinite normal;
+
+}
+
+.pupil:hover{
+  width:1em;
+  height:1em;
+}
+
+.eye.one{
+  top:2em;
+  left:2em;
+}
+
+.eye.two{
+  top:2em;
+  left:4em;
+
+}
+
+/*LANDSCAPE*/
+#stones{
+  position:absolute;
+  top:30em;
+  left:85em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-3;
+}
+
+#stones-2{
+  position:absolute;
+  top:45em;
+  left:50em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-3;
+}
+#stones-3{
+  position:absolute;
+  top:60em;
+  left:120em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-3;
+}
+#stones-4{
+  position:absolute;
+  top:20em;
+  left:100em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-3;
+}
+#stones-5{
+  position:absolute;
+  top:45em;
+  left:50em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-3;
+}
+#stones-6{
+  position:absolute;
+  top:155em;
+  left:57em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:2;
+}
+#stones-7{
+  position:absolute;
+  top:75em;
+  left:125em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:3;
+}
+#stones-8{
+  position:absolute;
+  top:30em;
+  left:130em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:3;
+}
+#stones-9{
+  position:absolute;
+  top:63em;
+  left:85em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:3;
+}
+
+.stone.one{
+  width:8em;
+  height:5em;
+  border-radius:50%;
+  position:absolute;
+  background-color:gray;
+}
+.stone.two{
+  width:8em;
+  height:5em;
+  border-radius:50%;
+  position:absolute;
+  background-color:darkgray;
+  top:2em;
+  left:2em;
+}
+.stone.three{
+  width:8em;
+  height:5em;
+  border-radius:50%;
+  position:absolute;
+  background-color:gainsboro;
+  top:2em;
+  left:-2em;
+}
+
+.rock{
+  width:8em;
+  height:5em;
+  border-radius:50%;
+  position:absolute;
+  background-color:gray;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-1;
+
+}
+
+.rock.one{
+  top:40em;
+  left:110em;
+}
+.rock.two{
+  background-color:darkgray;
+  top:42em;
+  left:105em;
+}
+.rock.three{
+  background-color:gainsboro;
+  top:44em;
+  left:108em;
+}
+
+#grass{
+  position:absolute;
+  top:20em;
+  left:90em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-1;
+
+}
+#grass-two{
+  position:absolute;
+  top:40em;
+  left:77em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:2;
+
+}
+#grass-three{
+  position:absolute;
+  top:45em;
+  left:85em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+#grass-four{
+  position:absolute;
+  top:45em;
+  left:60em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+
+}
+#grass-five{
+  position:absolute;
+  top:5em;
+  left:80em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-1;
+
+}
+#grass-six{
+  position:absolute;
+  top:30em;
+  left:100em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:-1;
+}
+#grass-seven{
+  position:absolute;
+  top:55em;
+  left:110em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+#grass-eight{
+  position:absolute;
+  top:65em;
+  left:95em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+
+#grass-nine{
+  position:absolute;
+  top:80em;
+  left:140em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+
+#grass-ten{
+  position:absolute;
+  top:60em;
+  left:120em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+#grass-eleven{
+  position:absolute;
+  top:40em;
+  left:150em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:1;
+}
+#grass-twelve{
+  position:absolute;
+  top:50em;
+  left:160em;
+  animation:landscape 25s linear 5s infinite normal;
+  z-index:3;
+}
+.grass.one{
+  position:relative;
+  display:inline-block;  
+  background-color:green;
+  height:12em;
+  width:.7em;
+  transform:rotate(-4deg);
+}
+.grass.two{
+  position:relative;
+  display:inline-block;  
+  background-color:lightgreen;
+  height:15em;
+  width:.5em;
+  transform:rotate(-3deg);
+}
+.grass.three{
+  position:relative;
+  display:inline-block;  
+  background-color:green;
+  height:20em;
+  width:.8em;
+  transform:rotate(-2deg);
+
+}
+.grass.four{
+  position:relative;
+  display:inline-block;  
+  background-color:lightgreen;
+  height:15em;
+  width:.4em;
+  transform:rotate(-1deg);
+
+}
+.grass.five{
+  position:relative;
+  display:inline-block;  
+  background-color:green;
+  height:17em;
+  width:.6em;
+  /*transform:rotate(1deg);*/
+}
+.grass.six{
+  position:relative;
+  display:inline-block;  
+  background-color:lightgreen;
+  height:14em;
+  width:.7em;
+  transform:rotate(1deg);
+}
+.grass.seven{
+  position:relative;
+  display:inline-block;  
+  background-color:green;
+  height:16em;
+  width:.5em;
+  transform:rotate(2deg);
+}
+.grass.eight{
+  position:relative;
+  display:inline-block;  
+  background-color:lightgreen;
+  height:12em;
+  width:.5em;
+  transform:rotate(3deg);
+}
+
+
+</style>
+  </head>
+  <body>
+<!-- ROCKS -->
+<div class="rock one"></div>
+<div class="rock two"></div>
+<div class="rock three"></div>
+<div id="stones">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-2">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-3">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-4">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-5">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-6">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-7">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-8">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+<div id="stones-9">
+  <div class="stone one"></div>
+  <div class="stone two"></div>
+  <div class="stone three"></div>
+</div>
+
+<!-- GRASS -->
+<div id="grass">
+<div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+<!-- <div class="grass nine"></div> -->
+<!-- <div class="grass ten"></div> -->
+</div>
+<div id="grass-two">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-three">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-four">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-five">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-six">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-seven">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-eight">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-nine">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-ten">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-eleven">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<div id="grass-twelve">
+  <div class="grass one"></div>
+<div class="grass two"></div>
+<div class="grass three"></div>
+<div class="grass four"></div>
+<div class="grass five"></div>
+<div class="grass six"></div>
+<div class="grass seven"></div>
+<div class="grass eight"></div>
+</div>
+<!-- CREATURE -->
+<div class="cell one"></div>
+<div class="cell two"></div>
+<div class="cell three"></div>
+<div class="cell four"></div>
+<div class="cell five"></div>
+<div class="cell six"></div>
+<div class="cell seven"></div>
+<div class="cell eight"></div>
+<div class="cell nine"></div>
+<div class="cell ten"></div>
+<div class="cell eleven"></div>
+<div class="cell twelve"></div>
+<div class="cell thirteen"></div>
+<div class="cell fourteen"></div>
+<div class="cell fifteen">
+  <div class="eye one">
+    <div class="pupil one"></div>
+  </div>
+  <div class="eye two">
+    <div class="pupil two"></div>
+  </div>
+</div>
+<!-- <div class="cell sixteen"></div> -->
+  </body>
+</html>
