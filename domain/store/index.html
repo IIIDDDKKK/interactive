@@ -6,6 +6,8 @@
 <title>DOMAIN</title>
 	<style>	
 
+/*MEDIA QUERIES*/
+
 @media (max-width:500px) {
 
 #logo {
@@ -43,6 +45,10 @@ select {
 	max-width:90vw;
 	height:20vw;
 	margin-bottom:2vw;
+	-ms-text-align-last: center;
+   	-moz-text-align-last: center;
+   text-align-last: center;
+   text-align: center;
 }
 iframe {
   mix-blend-mode: none;
@@ -52,6 +58,16 @@ iframe {
 
 
 }
+
+/*REGULAR SCREENS*/
+    
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+
+
+    }
 
 html {
 	text-align:center;
@@ -205,8 +221,11 @@ select {
     margin-right: auto;
 	width: 500px;
 	font: 600 14px/1.3 sans-serif;
-	text-align-last: center;  
-  	appearance: none;
+   text-align-last: center;
+   text-align: center;
+   -ms-text-align-last: center;
+   -moz-text-align-last: center;
+    appearance: none;
   	color: var(--baseFg);
 	line-height: 1;
     padding: 10px 32px;
