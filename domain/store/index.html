@@ -2,8 +2,46 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DOMAIN</title>
 	<style>	
+
+@media (max-width:500px) {
+
+
+#logo img{
+	/*display:block; */
+	/*position:fixed;*/
+	margin-top:2vh;
+	margin-bottom:2vh;
+	height:35vh;
+	max-width:90vw;
+	/*margin:0 auto;*/
+	/*text-align:center;*/
+}
+
+img{
+	height:35vh;
+}
+
+.buy-button{
+	max-width:90vw;
+	height:30vw;
+	margin-bottom:2vw;
+		}
+
+/*#buy{
+	position:absolute;
+	background-color: orange;
+}*/
+
+select {
+	max-width:90vw;
+	height:30vw;
+	margin-bottom:2vw;
+
+}
+}
 		
 body {
   margin: 0;
@@ -13,13 +51,16 @@ body {
 #sheet {
 	margin: 0 auto;
 	align-content: center;
+	/*position:fixed;*/
 } 
 
 #buy {
-	position: fixed;
+	display:block;
+	position:fixed;
 	z-index: 3;
 	left: 50%;
 	top: 90%;
+	/*width:90%;*/
 	transform: translate(-50%, -50%);
 		}
 
@@ -48,10 +89,10 @@ body {
 }
 
 
-h1 {
+/*h1 {
 	font-family: barcode;
 	font-size: 2em;
-		}
+		}*/
 
 img {
     display: block;
@@ -106,15 +147,18 @@ iframe {
 	background-color: red; /* Green */
     border: none;
     color: black;
-	margin: 5px;
+	/*margin: 5px;*/
     padding: 10px 32px;
 	width: 500px;
     text-align: center;
     text-decoration: none;
 	font-weight: bold;
-    display: inline-block;
+    display: block;
     font-size: 14px;
 	filter: drop-shadow(10px 10px 10px #000);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
 		}
 		
 .buy-button:hover {
@@ -174,7 +218,7 @@ select:active {
 table {
 	margin-left: auto;
 	margin-right: auto;
-	
+
 		}
 </style>
 
