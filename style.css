@@ -24,7 +24,10 @@
     }
 
     body {
+        /*background-image:url("assets/simba.gif");*/
+        /*background-repeat:repeat;*/
         background-color:lightgreen;
+
         /*background: linear-gradient(45deg, coral, gray); */
         font-family:"Georgia", serif;
         font-size:2rem;
@@ -33,13 +36,13 @@
         margin:.5em;
     }
 
-    h1 h2 h3 h4 h5 h6{
-        display:inline-block;
+    h2{
         color:#202020;
 
     }
 
     nav {
+        background-color:lightgreen;
         bottom:0;
         display:flex;
         flex-flow:row wrap;
@@ -58,6 +61,7 @@
 
     ul, ol{
         list-style-type: none;
+        background-color: lightgreen;
 
     }
 
