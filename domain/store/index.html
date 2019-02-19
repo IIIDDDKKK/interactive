@@ -156,25 +156,30 @@ iframe {
 }
 	
 		
-.button {
+.menu {
     background-color: yellow; /* Green */
     border: none;
     color: black;
 	margin: 5px;
     padding: 15px 32px;
-	width: 700px;
+	width: 500px;
     text-align: center;
+	-ms-text-align: center;
+	-moz-text-align: center;
+   	text-align-last: center;
+   	-ms-text-align-last: center;
+   	-moz-text-align-last: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
 	filter: drop-shadow(10px 10px 10px #000);
 		}
 
-.button:hover {
+.menu:hover {
 	cursor: pointer;
 		}
 		
-.button:active {
+.menu:active {
 	filter: drop-shadow(2px 2px 2px #000);
 	transform: translateY(4px);
 		}
@@ -210,14 +215,14 @@ iframe {
 	transform: translateY(4px);
 		}
 
-.domain-button {
+/*.domain-button {
   --radius: 0;
   --baseFg: black;
   --baseBg: yellow;
   --accentFg: yellow;
   --accentBg: black;
   --text-align: center;
-}
+}*/
 
 		
 select {
@@ -225,26 +230,27 @@ select {
     margin-left: auto;
     margin-right: auto;
 	width: 500px;
-	font: 600 14px/1.3 sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	-ms-text-align: center;
+	-moz-text-align: center;
    	text-align-last: center;
-   	text-align: center;
    	-ms-text-align-last: center;
    	-moz-text-align-last: center;
     appearance: none;
-  	color: var(--baseFg);
 	line-height: 1;
-    padding: 10px 32px;
+    padding: 15px 32px;
     border:none;
-  	border-radius: var(--radius);
-  	background-color: var(--baseBg);
+  	border-radius:0;
+  	background-color:yellow;
 	filter: drop-shadow(5px 5px 5px #000);
-	text-align: var(--text-align);
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 
 }
-select:hover {
+/*select:hover {
     background-image: linear-gradient(var(--accentFg), var(--accentFg)),
     linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
@@ -263,7 +269,7 @@ select:active {
 	text-align-last: center;
 	cursor: pointer;
 
-}	
+}	*/
 table {
 	margin-left: auto;
 	margin-right: auto;
@@ -287,8 +293,8 @@ option{
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="8VHXBEM9YLZPE">
 <table>
-<tr><td><select name="os0" class="domain-button">
-	<option style="text-align:center" value="SELECT BOOK" selected>SELECT BOOK</option>
+<tr><td><select name="os0" class="menu">
+	<option value="SELECT BOOK" selected>SELECT BOOK</option>
 	<option value="MANIFESTO OF THE COMMUNIST PARTY">MANIFESTO OF THE COMMUNIST PARTY $14.00 USD</option>
 	<option value="A ROOM OF ONES OWN">A ROOM OF ONES OWN $18.00 USD</option>
 	<option value="NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS">NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS $18.00 USD</option>
