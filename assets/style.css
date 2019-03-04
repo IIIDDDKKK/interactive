@@ -2,6 +2,10 @@
         font-family:"UniversLTStd-XBlackEx";
         src:local(UniversLTStd-XBlackEx.otf);
     }
+@font-face{
+        font-family:"UniversLTStd-BoldEx";
+        src:local(UniversLTStd-BoldEx.otf);
+    }
 @-webkit-keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
@@ -26,16 +30,17 @@
     body {
         background-color:lightgreen;
         /*background: linear-gradient(45deg, coral, gray); */
-        font-family:"Georgia", serif;
-        font-size:2rem;
+        font-family:"UniversLTStd-BoldEx", sans-serif;
+        font-size:1rem;
     }
     div{
-        margin:.5em;
+        margin:1em;
     }
 
     h1 h2 h3 h4 h5 h6{
         display:inline-block;
         color:#202020;
+        text-align:center;
 
     }
 
@@ -45,12 +50,24 @@
         flex-flow:row wrap;
         justify-content:space-around;
         align-items:flex-end;
+        font-family:"UniversLTStd-BoldEx", sans-serif;
+
         /*padding:1em;*/
 /*        margin:.5em;
 */    }
     li {
         color:#202020;
+        padding:4px;
+        border-style: outset;
+        border: 1;
+        border-color:lightgreen;
+        text-decoration:none;
     }
+    li:hover{
+        background-color: #202020;
+        color:lightgreen;
+    }
+
     p{
         color:#202020;
     }
@@ -58,6 +75,8 @@
 
     ul, ol{
         list-style-type: none;
+        width:50%;
+
 
     }
 
@@ -69,6 +88,8 @@
         color:lightgreen;
         background-color:#202020;
     }
+
+
 
     .main{
         margin:.5em;

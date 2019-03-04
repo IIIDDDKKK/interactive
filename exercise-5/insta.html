@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SLOW INSTAGRAM</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+<style>
+
+@font-face{
+        font-family:"UniversLTStd-XBlackEx";
+        src:local(UniversLTStd-XBlackEx.otf);
+    }
+@font-face{
+        font-family:"UniversLTStd-BoldEx";
+        src:local(UniversLTStd-BoldEx.otf);
+    }
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+
+}
+
+@-webkit-keyframes color {
+
+  0% 100% {
+    /*transform: translate(0,0);*/
+    background-color: yellow;
+  }
+
+  25% {
+    /*transform: translate(1em,1em);*/
+    background-color: magenta;
+  }
+  50% {
+    /*transform: translate(-1em,1em);*/
+    background-color:cyan;
+  }
+  75% {
+    /*transform: translate(-1em,-1em);*/
+    background-color: lime;
+  }
+  
+}
+
+
+
+    * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+    }
+    html{
+        height:100%;
+    }
+
+    body {
+        background-color:lightgray;
+        /*background: linear-gradient(45deg, coral, gray); */
+        font-family:"UniversLTStd-BoldEx", sans-serif;
+        animation: color 30s ease 0s infinite normal;
+
+    }
+
+    h1 {
+        font-family:"UniversLTStd-XBlackEx",sans-serif;
+        display:inline-block;
+        color:#202020;
+
+    }
+
+    nav {
+        display:inline-block;
+    }
+    li {
+        color:#202020;
+    }
+    p{
+        color:white;
+        /*text-align:justify;*/
+        font-size:1.3em;
+        line-height:1em;
+    }
+
+
+    ul{
+        list-style-type: none;
+
+    }
+
+    a{
+        text-decoration:none;
+        color:#202020;
+    }
+    a:hover{
+        color:coral;
+        background-color:#202020;
+    }
+
+    .main{
+        margin:.5em;
+    }
+    .menu {
+        padding:0;
+        margin:.5em;
+    }
+    .content{
+        margin:.5em;
+        max-width:50em;
+        -moz-column-count:2;
+        -moz-column-gap:1em;
+        -webkit-column-count:2;
+        -webkit-column-gap:1em;
+        column-count:2;
+        column-gap:1em;
+
+    } 
+    .gallery{
+        position:absolute;
+        /*margin-top:20px;*/
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .gallery img{
+        height: 200px;
+        width: 200px;
+        object-fit:cover;
+        margin: 20px;
+        margin-bottom:30px;
+        align-items: center;
+
+    }
+    .gallery.glow{
+        position:absolute;
+        /*margin-top:20px;*/
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-around;
+        align-items:center;
+
+    }
+    .gallery.glow div{
+        height: 200px;
+        width: 200px;
+        background-color:darkgray;
+        margin: 20px;
+        margin-bottom:30px;
+        box-shadow: 0px 0px 40px 40px darkgray;
+        opacity:1;
+        text-align:center;
+        transition-property:opacity;
+        transition-duration:4s;
+        transition-timing-function: ease-in-out;
+        /*animation: color 30s ease 0s infinite normal;*/
+        align-items:center;
+        cursor:cell;
+
+    }
+    .delay.one {
+        animation-delay:5s;
+
+    }
+    .delay.two{
+        animation-delay: 10s;
+    }
+    .delay.three {
+        animation-delay:15s;
+
+    }
+    .delay.four{
+        animation-delay:20s;
+    }
+    .delay.five {
+        animation-delay:25s;
+
+    }
+    .delay.six{
+        animation-delay: 30s;
+    }
+
+    .gallery.glow div:hover{
+        opacity:0;
+
+    }
+
+    .menu li{
+        display:inline-block;
+        padding-right:4em;
+        vertical-align: top;
+        position:relative;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown li:hover{
+        color:coral;
+        background-color:#202020
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #202020;
+        color:coral;
+        z-index: 1;
+        margin:0;
+        padding:0;
+    }
+    .dropdown-content a{
+        color:coral;
+        padding:2px;
+
+}
+    .dropdown-content a:hover{
+        background-color: coral;
+        color:#202020;
+
+}
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;;
+        -webkit-animation: fadeIn .5s;
+
+    }
+
+@media all and (max-width: 800px) {
+
+    .gallery img{
+        width:300px;
+        height:300px;
+    }
+    .gallery.glow div{
+
+        width:300px;
+        height:300px;
+    }
+}
+
+@media all and (max-width: 700px) {
+
+    .gallery img{
+        width:500px;
+        height:500px;
+    }
+    .gallery.glow div{
+
+        width:500px;
+        height:500px;
+    }
+}
+
+</style>
+  </head>
+<body>
+<!--     <div class="main">
+<h1>CHRISTOPHER RICE</h1>
+</div>
+<nav>
+    <ul class="menu">
+    <li><a href="index.html">ABOUT</a></li>
+    <li class="dropdown"><a href="projects.html">PROJECTS</a>
+        <div class="dropdown-content">
+        <ul>
+        <li><a href="gehl.html">Gehl Studio</a></li>
+        <li><a href="ramp.html">R A M P</a></li>
+        <li><a href="thread.html">Thread Collective</a></li>
+        <li><a href="wxy.html">W X Y</a></li>
+        <li><a href="index.html">NYC - EJA</a></li>
+        <li><a href="multiplicity.html">MultipliCITY</a></li>
+        <li><a href="pratt.html">Pratt Institute</a></li>
+        </ul>
+        </div>
+    </li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="photo.html">35MM</a></li>
+    </ul>
+</nav> -->
+<div class="gallery">
+    <img src="assets/photos/201902/ff01e3f20753fa36e6a17d55ccbd404c.jpg">
+    <img src="assets/photos/201902/ba870fc9f1b0e17bd49f61e4393fef3a.jpg">
+    <img src="assets/photos/201902/2ff6808989949a6f79aaec3db5528b22.jpg">
+    <img src="assets/photos/201901/a24ce20792bec84130d0ecd30ec02639.jpg">
+    <img src="assets/photos/201812/f3d36aaa37ec91e3a226bfb64b491f8e.jpg">
+    <img src="assets/photos/201812/6028781393c8b6e6d24135d9996064aa.jpg">
+    <img src="assets/photos/201812/96597c9353a17ce139f10e5e68209ce1.jpg">
+    <img src="assets/photos/201812/197fcdd2ffa6e3286381bbaf75df9980.jpg">
+    <img src="assets/photos/201812/22c0d1123ba791c698a9220876e9c3ce.jpg">
+    <img src="assets/photos/201812/9f20efbc4e191f2fda109e24a13718e8.jpg">
+    <img src="assets/photos/201812/7c25e3e9f4c586e282b4db7165858c56.jpg">
+    <img src="assets/photos/201812/5d6252b2bdb012cb1f2b7dcc0c3e749c.jpg">
+    <img src="assets/photos/201812/2f534dcb5d281ca0a31ffae70be2fb02.jpg">
+    <img src="assets/photos/201812/2b41fd8e60880e68cb775659e0195e22.jpg">
+    <img src="assets/photos/201809/892ac766c161c3fff6b0fcef108e9541.jpg">
+    <img src="assets/photos/201809/28f60f3134ca721a628f3cfeabc04176.jpg">
+    <img src="assets/photos/201809/6c182e1f9abf55ef94db943c1bd63274.jpg">
+    <img src="assets/photos/201807/75a966bd9dd3ae3023653c10605cabc8.jpg">
+    <img src="assets/photos/201806/28d04dc5475d071e5c07c6d8dd6e2147.jpg">
+    <img src="assets/photos/201805/e159070868b598cc642e59bea6f54b58.jpg">
+    <img src="assets/photos/201805/0263d844202705051caa6d2004a2861b.jpg">
+</div>
+<div class="gallery glow">
+    <div><p>ART LOS ANGELES READER ISSUE 5</p></div>
+    <div class="delay one"><p>FAMILY</p></div>
+    <div class="delay two"><p>NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS</p></div>
+    <div class="delay three"><p>ULISES</p></div>
+    <div class="delay four"><p>ENCHIRIDION</p></div>
+    <div class="delay five"><p>LIBRARY</p></div>
+    <div class="delay six"><p>FRANKENSTEIN</p></div>
+    <div><p>BOOKSHOP</p></div>
+    <div class="delay one"><p>NARRATIVE</p></div>
+    <div class="delay two"><p>WILLIS</p></div>
+    <div class="delay three"><p>CATEGORIES</p></div>
+    <div class="delay four"><p>USPS</p></div>
+    <div class="delay five"><p>CHRIS</p></div>
+    <div class="delay six"><p>BOOK FAIR</p></div>
+    <div><p>TEJU COLE</p></div>
+    <div class="delay one"><p>WORK</p></div>
+    <div class="delay two"><p>MANIFESTO</p></div>
+    <div class="delay three"><p>INTERVIEW</p></div>
+    <div class="delay four"><p>DJING</p></div>
+    <div class="delay five"><p>BARCODES</p></div>
+    <div class="delay six"><p>DUO</p></div>
+
+</div>
+</body>
+</html>
