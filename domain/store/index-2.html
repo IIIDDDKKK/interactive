@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+<title>DOMAIN</title>
+	<style>	
+
+/*MEDIA QUERIES*/
+
+@media (max-width:500px) {
+
+#sheet{
+	visibility: hidden
+}
+
+#logo {
+	position:absolute;
+	z-index:10;
+}
+#logo img{
+	/*display:block; */
+	/*position:fixed;*/
+	margin-top:2vh;
+	margin-bottom:2vh;
+	/*height:35vh;*/
+	width:90vw;
+	height:90vh;
+	/*margin:0 auto;*/
+	/*text-align:center;*/
+	z-index: 10;
+}
+
+/*img{
+	height:35vh;
+}*/
+
+.buy-button{
+	display:block;
+	margin:auto;
+	text-align:center;
+	width:95%;
+	font-size:5vw; 
+	/*max-width:90vw;*/
+	/*height:20vw;*/
+	/*margin-bottom:20vw;*/
+	/*font-size: .5em;*/
+		}
+
+.menu{
+	display:block;
+	margin:auto;
+	width:95%;
+	font-size:5vw;
+ 	/*max-width:90vw;*/
+	/*height:20vw;*/
+	/*margin-bottom:20vw;*/
+
+}
+/*
+body{
+	background-color:lime;
+}*/
+
+
+
+/*
+select {
+	max-width:90vw;
+	height:20vw;
+	margin-bottom:2vw;
+	-ms-text-align-last: center;
+   	-moz-text-align-last: center;
+   text-align-last: center;
+   text-align: center;
+}*/
+
+/*iframe {
+  mix-blend-mode: none;
+  z-index:-1;
+}*/
+
+
+
+}
+
+/*REGULAR SCREENS*/
+    
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+
+
+    }
+
+html {
+	text-align:center;
+}
+		
+body {
+  margin: 0;
+  padding: 0;
+}
+		
+#sheet {
+	margin: 0 auto;
+	align-content: center;
+	/*position:fixed;*/
+} 
+
+#buy {
+	display:block;
+	position:fixed;
+	z-index: 3;
+	/*left: 50%;*/
+	top: 50%;
+	/*width:95%;*/
+	/*transform: translate(-50%, -50%);*/
+		}
+
+#logo{
+	/*background:yellow;*/
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	max-height:80vh;
+	height:80vh;
+	z-index:-10;
+}
+
+
+#logo img{
+	/*display:block; */
+	/*position:fixed;*/
+	margin-top:2vh;
+	margin-bottom:2vh;
+	max-height:90vh;
+	max-width:90vw;
+	/*margin:0 auto;*/
+	text-align:center;
+}
+
+
+/*h1 {
+	font-family: barcode;
+	font-size: 2em;
+		}*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 5px;
+    webkit-filter: drop-shadow(10px 10px 10px #000);
+  	filter: drop-shadow(10px 10px 10px #000);
+		}
+
+		/*img:hover {
+			display: none;
+		}*/
+
+iframe {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  box-sizing: border-box;
+  mix-blend-mode: multiply;
+  z-index:-1;
+}
+	
+		
+.menu {
+    background-color: yellow; 
+    border: none; 
+    /* color: black; */
+    /* margin: 5px; */
+    /* height: 36px; */
+    /* padding: 16px 33px; */
+    width: 48%;
+    /* text-align: center; */
+    -ms-text-align: center;
+    -moz-text-align: center;
+    /* text-align-last: center; */
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 3vw;
+    font-weight:bold;
+    filter: drop-shadow(10px 10px 10px #000);
+}
+
+.menu:hover {
+	cursor: pointer;
+		}
+		
+.menu:active {
+	filter: drop-shadow(2px 2px 2px #000);
+	transform: translateY(4px);
+		}
+
+.buy-button {
+    background-color: red; 
+    border: none;
+    border-radius:5px;
+    /* color: black; */
+    /* margin: 5px; */
+    /* padding: 10px 32px; */
+     width: 48%; 
+    text-align: center;
+    /* text-decoration: none; */
+    font-weight: bold; 
+    display: inline-block;
+    font-size: 3vw;
+    filter: drop-shadow(10px 10px 10px #000);
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+		
+.buy-button:hover {
+	cursor: pointer;
+		}
+		
+.buy-button:active {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);  
+	transform: translateY(4px);
+		}
+
+/*.domain-button {
+  --radius: 0;
+  --baseFg: black;
+  --baseBg: yellow;
+  --accentFg: yellow;
+  --accentBg: black;
+  --text-align: center;
+}*/
+
+		
+/*select {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 500px;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	-ms-text-align: center;
+	-moz-text-align: center;
+   	text-align-last: center;
+   	-ms-text-align-last: center;
+   	-moz-text-align-last: center;
+    appearance: none;
+	line-height: 1;
+    padding: 15px 32px;
+    border:none;
+  	border-radius:0;
+  	background-color:yellow;
+	filter: drop-shadow(5px 5px 5px #000);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}*/
+/*select:hover {
+    background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+	cursor: pointer;
+}
+
+select:active {
+    background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+  	color: var(--accentBg);
+  	border-color: var(--accentFg);
+  	background-color: var(--accentFg);
+	text-align-last: center;
+	cursor: pointer;
+
+}	*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+
+		}
+
+option{
+	text-align:center;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="logo"><img src="logo.svg" width="1200"></div>
+
+<!--	<a href="181127_order.html"><button class="button"><strong>ORDER BOOKS</strong></button></a>-->
+	<div id="buy">		
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="8VHXBEM9YLZPE">
+<table>
+<tr>
+	<td>
+	<select name="os0" class="menu">
+	<option value="SELECT BOOK" selected>SELECT BOOK</option>
+	<option value="MANIFESTO OF THE COMMUNIST PARTY">MANIFESTO OF THE COMMUNIST PARTY $14.00 USD</option>
+	<option value="A ROOM OF ONES OWN">A ROOM OF ONES OWN $18.00 USD</option>
+	<option value="NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS">NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS $18.00 USD</option>
+	<option value="THE ENCHIRIDION">THE ENCHIRIDION $14.00 USD</option>
+	<option value="THE CATEGORIES">THE CATEGORIES $14.00 USD</option>
+	<option value="FRANKENSTIEN">FRANKENSTIEN $22.00 USD</option>
+	</select> 
+<!-- 	</td>
+<td> -->
+<input type="hidden" name="currency_code" value="USD">
+<input type="submit" border="0" value="ADD TO CART" name="submit" alt="PayPal - The safer, easier way to pay online!" class="buy-button">
+<!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+<!-- </td> -->
+</tr>
+</table>
+</form>
+
+</div>
+	<div id="sheet">
+	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSm_8yYbW0e8uQejdRreKTyYqYdp6MX1dRI5ZSZOqwoiVrnGk7fdFi6MuqjhY8_4oS6P2HADiW3X_GD/pubhtml?widget=true&amp;headers=false"></iframe>
+	</div>
+
+
+</body>
+</html>
