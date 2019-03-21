@@ -6,30 +6,10 @@
 <title>DOMAIN</title>
 	<style>	
 
-/*MEDIA QUERIES*/
 
-@media (max-width:500px) {
 
-#sheet{
-	visibility: hidden
-}
 
-#logo {
-	position:absolute;
-	z-index:10;
-}
-#logo img{
-	/*display:block; */
-	/*position:fixed;*/
-	margin-top:2vh;
-	margin-bottom:2vh;
-	/*height:35vh;*/
-	width:90vw;
-	height:90vh;
-	/*margin:0 auto;*/
-	/*text-align:center;*/
-	z-index: 10;
-}
+
 
 /*#buy{
 	flex-direction:column;
@@ -43,28 +23,18 @@
 	display:flex;
 	flex-direction:column;
 }*/
-.buy-button{
+/*.buy-button{
 	display:block;
 	margin:auto;
 	text-align:center;
 	width:95%;
-	font-size:5vw; 
+	font-size:5vw;*/ 
 	/*max-width:90vw;*/
 	/*height:20vw;*/
 	/*margin-bottom:20vw;*/
 	/*font-size: .5em;*/
-		}
+		/*}*/
 
-.menu{
-	display:block;
-	margin:auto;
-	width:95%;
-	font-size:5vw;
- 	/*max-width:90vw;*/
-	/*height:20vw;*/
-	/*margin-bottom:20vw;*/
-
-}
 /*
 body{
 	background-color:lime;
@@ -90,7 +60,7 @@ select {
 
 
 
-}
+/*}*/
 
 /*REGULAR SCREENS*/
     
@@ -102,13 +72,51 @@ select {
 
     }
 
-html {
-	text-align:center;
-}
 		
 body {
   margin: 0;
   padding: 0;
+  background-color: #afafaf;
+}
+
+form {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	width:100vw;
+	/*height:20vw;*/
+
+}
+
+p, ul, li{
+	color:white;
+	font-family:sans-serif;
+	font-size:2rem;
+	font-weight: 300;
+	list-style: none;
+	line-height:1.2;
+}
+
+a{
+	text-decoration:none;
+	color:lime;
+}
+
+#text{
+	/*margin: 0 auto;*/
+	/*align-content: center;*/
+	display:block;
+	position:fixed;
+	z-index:2;
+	visibility:hidden;
+	top:-2vh;
+	margin-left:3vw; 
+	margin-right:3vw; 
+
+
 }
 		
 #sheet {
@@ -118,12 +126,17 @@ body {
 } 
 
 #buy {
-	display:flex;
+/*	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	align-content:center;*/
 	position:fixed;
 	z-index: 3;
 	/*left: 50%;*/
-	top: 50%;
-	/*width:95%;*/
+	top: 40vh;
+	/*width:100%;*/
 	/*transform: translate(-50%, -50%);*/
 		}
 
@@ -186,21 +199,22 @@ iframe {
 		
 .menu {
     background-color: yellow; 
-    border: none; 
+    border: none;
+    border-radius: 10px; 
     /* color: black; */
-    /* margin: 5px; */
+    margin: 5px; 
     /* height: 36px; */
-    /* padding: 16px 33px; */
+    padding: 5px; 
     width: 48%;
     /* text-align: center; */
-    -ms-text-align: center;
-    -moz-text-align: center;
+/*    -ms-text-align: center;
+    -moz-text-align: center;*/
     /* text-align-last: center; */
-    -ms-text-align-last: center;
-    -moz-text-align-last: center;
+/*    -ms-text-align-last: center;
+    -moz-text-align-last: center;*/
     /* text-decoration: none; */
     /* display: inline-block; */
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight:bold;
     filter: drop-shadow(10px 10px 10px #000);
 }
@@ -217,23 +231,24 @@ iframe {
 .buy-button {
     background-color: red; 
     border: none;
-    border-radius:5px;
+    border-radius:10px;
     /* color: black; */
-    /* margin: 5px; */
-    /* padding: 10px 32px; */
-     width: 48%; 
-    text-align: center;
+    margin: 5px; 
+    padding: 6px; 
+    width: 48%; 
+    text-align: left;
     /* text-decoration: none; */
     font-weight: bold; 
     display: inline-block;
-    font-size: 3vw;
-    filter: drop-shadow(10px 10px 10px #000);
+    font-size: 2vw;
     /* margin-left: auto; */
     /* margin-right: auto; */
-    margin-top: 5px;
-    -webkit-appearance: none;
+    /*margin-top: 5px;*/
+/*    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none;*/
+    filter: drop-shadow(10px 10px 10px #000);
+
 }
 		
 .buy-button:hover {
@@ -309,6 +324,64 @@ table {
 option{
 	text-align:center;
 }
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:500px) {
+
+#text{
+	visibility: visible;
+}
+
+#sheet{
+	visibility: hidden;
+}
+
+#logo {
+	visibility:hidden;
+	/*position:absolute;*/
+	/*z-index:10;*/
+}
+#logo img{
+	/*display:block; */
+	/*position:fixed;*/
+	margin-top:2vh;
+	margin-bottom:2vh;
+	/*height:35vh;*/
+	width:90vw;
+	height:90vh;
+	/*margin:0 auto;*/
+	/*text-align:center;*/
+	/*z-index: 10;*/
+}
+
+
+form {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	/*justify-content:center;*/
+	/*align-items:stretch;*/
+	align-content:stretch;
+	width:100vw;
+	/*height:20vw;*/
+
+}
+
+.buy-button{
+	width:90vw;
+	font-size: 6vw;
+}
+
+
+.menu{
+	width:90vw;
+	font-size: 6vw;
+}
+
+}
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -318,12 +391,9 @@ option{
 	<div id="logo"><img src="logo.svg" width="1200"></div>
 
 <!--	<a href="181127_order.html"><button class="button"><strong>ORDER BOOKS</strong></button></a>-->
-	<div id="buy">		
-<table>
-<tr>
+<div id="buy">		
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<td>
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="8VHXBEM9YLZPE">
 	<select name="os0" class="menu">
@@ -335,20 +405,25 @@ option{
 	<option value="THE CATEGORIES">THE CATEGORIES $14.00 USD</option>
 	<option value="FRANKENSTIEN">FRANKENSTIEN $22.00 USD</option>
 	</select> 
-</td>
-	</form>
-<td>
 <input type="hidden" name="currency_code" value="USD">
 <input type="submit" border="0" value="ADD TO CART" name="submit" alt="PayPal - The safer, easier way to pay online!" class="buy-button">
 <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-</td>
-</tr>
-</table>
+	</form>
 
 </div>
 	<div id="sheet">
 	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSm_8yYbW0e8uQejdRreKTyYqYdp6MX1dRI5ZSZOqwoiVrnGk7fdFi6MuqjhY8_4oS6P2HADiW3X_GD/pubhtml?widget=true&amp;headers=false"></iframe>
 	</div>
+<div id="text">
+	<p>DOMAIN is a bookmaker and publisher. We publish a series of classic and forgotten fiction and non-fiction works which have entered into the public domain. Selected with an eye towards the queer and subversive, the series promotes a radical reimagining of the western literary cannon. We are a project of the design studio <a href="www.idk.zone">IDK</a></p>
+	<p>For more information:
+	<ul> 
+		<li><a href="mailto:info@domainbooks.org">Email</a></li>
+		<li><a href="tel:+19712194373">Call</a></li>
+		<li><a href="instagram.com/idk.zone">Insta</a></li>
+	</ul>
+</p>
+</div>
 
 
 </body>
