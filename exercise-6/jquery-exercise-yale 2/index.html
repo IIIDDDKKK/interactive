@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>jQuery Exercise</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+    <header role="banner">
+      <h1>Pigeon Crossing</h1>
+	</header>
+
+	<div id="status">
+        STOP
+	</div>
+
+	<img src="img/pigeon.gif" id="pigeon">
+
+    <img src="img/yale-crest.png" id="crest">
+
+    <div id="button" role="content">
+			T-R-A-F-F-I-C L-I-G-H-T
+    </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+
+
+$(document).ready(function(){
+
+  // PART 1
+
+  $('#crest').fadeOut('slow');
+
+  $('body').addClass('gradient');
+
+  $('#status').show();
+
+
+  // PART 2
+
+  // var stop = true;
+
+  // console.log('BY DEFAULT STOP IS: ' + stop);
+
+  // $('#button').click(function(){
+  //   changeLights();
+  // });
+
+  // PART 3
+
+  // function changeLights() {
+
+  //   // if stop is true
+  //   if (stop == true){
+  //     // then turn it green and change it to go
+  //     $('#status').css('background', 'green');
+  //     $('#status').html('GO');
+  //     // show the pigeon
+  //     $('#pigeon').show();
+  //     // then change stop to be false
+  //     stop = false;
+  //   }
+
+  //   // otherwise (if stop is false)
+  //   else {
+  //     // turn it to red and change it to stop
+  //     $('#status').css('background', 'red');
+  //     $('#status').html('STOP');
+  //     // fade out the pigeon slowly
+  //     $('#pigeon').fadeOut('slow');
+  //     // then change stop to be true
+  //     stop = true;
+  //   }
+
+  //   console.log('WE CLICKED AND STOP IS: ' + stop);
+
+  // }
+
+  // setInterval(function(){
+  //   console.log('something is happening');
+  //   changeLights();
+  // }, 10000);
+
+});
+    </script>
+  </body>
+</html>
