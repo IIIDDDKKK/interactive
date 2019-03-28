@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>IIIIIDDDDDDDKKKKKKKK</title>
+    <title>Epictetus</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
 <style>
 
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 5vw;
-  }
-}
+
 
 @font-face {
   font-family: "TWNTYFRSTCNTRY";
@@ -43,11 +39,11 @@ h2{
   text-align:center;
 }
 
-audio{
+/*audio{
   display:block;
   position:relative;
   margin:auto;
-  margin-bottom:1.4em;
+  margin-bottom:1.4em;*/
   /*padding-bottom:1.4em;*/
   /*opacity:.6;*/
   /*background-color:lightgreen;*/
@@ -55,6 +51,10 @@ audio{
   /*border-radius:40px;*/
   /*width:3vw;*/
 }
+
+/*div{
+	padding-right:3vw;
+}*/
 
 .header{
   text-align:center;
@@ -67,27 +67,59 @@ audio{
 
 .chapters{
   width:90vw;
-  line-height: 1.4;
+  line-height: 1.2em;
   padding:2vw;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(lightgreen,white,lightgreen);
+  /*box-shadow: inset 0 0 5px lightgreen;*/
+  /*border:10px; */
+  /*border-radius: 10px;*/
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+/*background: rgb(255,255,255);*/
+/*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,134,0,1) 0%, rgba(255,134,0,1) 0%, rgba(255,255,255,0) 0%);*/
+  background:red;
+  height: 40px;
+  /*border:10px gray 100%;*/
+  /*border: 5px gray; */
+  /*border-radius: 0px;*/
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 5vw;
+  }
+}
 
 
 
 </style>
   </head>
   <body>
+  	
+<!--Anything inside of the canvas tag will only display if the browser does not support the <canvas> tag.-->
+
     <div class="title">
 <h1>The Enchiridion</h1>
     <div class="chapters">
 <div class="header"><h2>I</h2>
-    <audio
+<!--     <audio
         controls
         src="enchiridion-chapter-1.mp3">
             Your browser does not support the
             <code>audio</code> element.
-    </audio>
+    </audio> -->
 </div>
 
 There are things which are within our power, and there are things which are beyond our power. Within our power are opinion, aim, desire, aversion, and, in one word, whatever affairs are our own. Beyond our power are body, property, reputation, office, and, in one word, whatever are not properly our own affairs.
@@ -98,12 +130,12 @@ Seek at once, therefore, to be able to say to every unpleasing semblance, “You
     
     <div class="chapters">
 <div class="header"><h2>II</h2>
-    <audio
+<!--     <audio
         controls
         src="enchiridion-chapter-2.mp3">
             Your browser does not support the
             <code>audio</code> element.
-    </audio>
+    </audio> -->
 </div>
 Remember that desire demands the attainment of that of which you are desirous; and aversion demands the avoidance of that to which you are averse; that he who fails of the object of his desires is disappointed; and he who incurs the object of his aversion is wretched. If, then, you shun only those undesirable things which you can control, you will never incur anything which you shun; but if you shun sickness, or death, or poverty, you will run the risk of wretchedness. Remove [the habit of] aversion, then, from all things that are not within our power, and apply it to things undesirable which are within our power. But for the present, altogether restrain desire; for if you desire any of the things not within our own power, you must necessarily be disappointed; and you are not yet secure of those which are within our power, and so are legitimate objects of desire. Where it is practically necessary for you to pursue or avoid anything, do even this with discretion and gentleness and moderation.
   </div>
@@ -232,7 +264,7 @@ The will of nature may be learned from things upon which we are all agreed. As w
 
 <div class="chapters">
 <div class="header"><h2>XXVII</h2></div>
-As a mark1 is not set up for the sake of missing the aim, so neither does the nature of evil exist in the world.
+As a mark<sup>1</sup> is not set up for the sake of missing the aim, so neither does the nature of evil exist in the world.
 </div>
 
 <div class="chapters">
@@ -241,7 +273,7 @@ If a person had delivered up your body to some passer-by, you would certainly be
 </div>
 
 <div class="chapters">
-<div class="header"><h2>XXIX2</h2></div>
+<div class="header"><h2>XXIX<sup>2</sup></h2></div>
 In every affair consider what precedes and what follows, and then undertake it. Otherwise you will begin with spirit, indeed, careless of the consequences, and when these are developed, you will shamefully desist. “I would conquer at the Olympic Games.” But consider what precedes and what follows, and then, if it be for your advantage, engage in the affair. You must conform to rules, submit to a diet, refrain from dainties; exercise your body, whether you choose it or not, at a stated hour, in heat and cold; you must drink no cold water, and sometimes no wine—in a word, you must give yourself up to your trainer as to a physician. Then, in the combat, you may be thrown into a ditch, dislocate your arm, turn your ankle, swallow an abundance of dust, receive stripes [for negligence], and, after all, lose the victory. When you have reckoned up all this, if your inclination still holds, set about the combat. Otherwise, take notice, you will behave like children who sometimes play wrestlers, sometimes gladiators, sometimes blow a trumpet, and sometimes act a tragedy, when they happen to have seen and admired these shows. Thus you too will be at one time a wrestler, and another a gladiator; now a philosopher, now an orator; but nothing in earnest. Like an ape you mimic all you see, and one thing after another is sure to please you, but is out of favor as soon as it becomes familiar. For you have never entered upon anything considerately; nor after having surveyed and tested the whole matter, but carelessly, and with a halfway zeal. Thus some, when they have seen a philosopher and heard a man speaking like Euphrates3—though, indeed, who can speak like him?—have a mind to be philosophers, too. Consider first, man, what the matter is, and what your own nature is able to bear. If you would be a wrestler, consider your shoulders, your back, your thighs; for different persons are made for different things. Do you think that you can act as you do and be a philosopher, that you can eat, drink, be angry, be discontented, as you are now? You must watch, you must labor, you must get the better of certain appetites, must quit your acquaintances, be despised by your servant, be laughed at by those you meet; come off worse than others in everything—in offices, in honors, before tribunals. When you have fully considered all these things, approach, if you please—that is, if, by parting with them, you have a mind to purchase serenity, freedom, and tranquillity. If not, do not come hither; do not, like children, be now a philosopher, then a publican, then an orator, and then one of Caesar’s officers. These things are not consistent. You must be one man, either good or bad. You must cultivate either your own reason or else externals; apply yourself either to things within or without you—that is, be either a philosopher or one of the mob.
 </div>
 
@@ -251,17 +283,17 @@ Duties are universally measured by relations. Is a certain man your father? In t
 </div>
 
 <div class="chapters">
-<h2>XXXI</h2>
+<div class="header"><h2>XXXI</h2></div>
 Be assured that the essence of piety toward the gods lies in this—to form right opinions concerning them, as existing and as governing the universe justly and well. And fix yourself in this resolution, to obey them, and yield to them, and willingly follow them amidst all events, as being ruled by the most perfect wisdom. For thus you will never find fault with the gods, nor accuse them of neglecting you. And it is not possible for this to be affected in any other way than by withdrawing yourself from things which are not within our own power, and by making good or evil to consist only in those which are. For if you suppose any other things to be either good or evil, it is inevitable that, when you are disappointed of what you wish or incur what you would avoid, you should reproach and blame their authors. For every creature is naturally formed to flee and abhor things that appear hurtful and that which causes them; and to pursue and admire those which appear beneficial and that which causes them. It is impracticable, then, that one who supposes himself to be hurt should rejoice in the person who, as he thinks, hurts him, just as it is impossible to rejoice in the hurt itself. Hence, also, a father is reviled by his son when he does not impart the things which seem to be good; and this made Polynices and Eteocles4 mutually enemies—that empire seemed good to both. On this account the husbandman reviles the gods; [and so do] the sailor, the merchant, or those who have lost wife or child. For where our interest is, there, too, is piety directed. So that whoever is careful to regulate his desires and aversions as he ought is thus made careful of piety likewise. But it also becomes incumbent on everyone to offer libations and sacrifices and first fruits, according to the customs of his country, purely, and not heedlessly nor negligently; not avariciously, nor yet extravagantly.
 </div>
 
 <div class="chapters">
-<h2>XXXII</h2>
+<div class="header"><h2>XXXII</h2></div>
 When you have recourse to divination, remember that you know not what the event will be, and you come to learn it of the diviner; but of what nature it is you knew before coming; at least, if you are of philosophic mind. For if it is among the things not within our own power, it can by no means be either good or evil. Do not, therefore, bring with you to the diviner either desire or aversion—else you will approach him trembling—but first clearly understand that every event is indifferent and nothing to you, of whatever sort it may be; for it will be in your power to make a right use of it, and this no one can hinder. Then come with confidence to the gods as your counselors; and afterwards, when any counsel is given you, remember what counselors you have assumed, and whose advice you will neglect if you disobey. Come to divination as Socrates prescribed, in cases of which the whole consideration relates to the event, and in which no opportunities are afforded by reason or any other art to discover the matter in view. When, therefore, it is our duty to share the danger of a friend or of our country, we ought not to consult the oracle as to whether we shall share it with them or not. For though the diviner should forewarn you that the auspices are unfavorable, this means no more than that either death or mutilation or exile is portended. But we have reason within us; and it directs us, even with these hazards, to stand by our friend and our country. Attend, therefore, to the greater diviner, the Pythian God, who once cast out of the temple him who neglected to save his friend.5
 </div>
 
 <div class="chapters">
-<h2>XXXIII</h2>
+<div class="header"><h2>XXXIII</h2></div>
 Begin by prescribing to yourself some character and demeanor, such as you may preserve both alone and in company.
 Be mostly silent, or speak merely what is needful, and in few words. We may, however, enter sparingly into discourse sometimes, when occasion calls for it; but let it not run on any of the common subjects, as gladiators, or horse races, or athletic champions, or food, or drink—the vulgar topics of conversation—and especially not on men, so as either to blame, or praise, or make comparisons. If you are able, then, by your own conversation, bring over that of your company to proper subjects; but if you happen to find yourself among strangers, be silent.<br><br>
 Let not your laughter be loud, frequent, or abundant.<br><br>
@@ -275,59 +307,78 @@ Be not prompt or ready to attend private recitations; but if you do attend, pres
 When you are going to confer with anyone, and especially with one who seems your superior, represent to yourself how Socrates or Zeno6 would behave in such a case, and you will not be at a loss to meet properly whatever may occur.<br><br>
 When you are going before anyone in power, fancy to yourself that you may not find him at home, that you may be shut out, that the doors may not be opened to you, that he may not notice you. If, with all this, it be your duty to go, bear what happens and never say to yourself, “It was not worth so much”; for this is vulgar, and like a man bewildered by externals.<br><br>
 In company, avoid a frequent and excessive mention of your own actions and dangers. For however agreeable it may be to yourself to allude to the risks you have run, it is not equally agreeable to others to hear your adventures. Avoid likewise an endeavor to excite laughter, for this may readily slide you into vulgarity, and, besides, may be apt to lower you in the esteem of your acquaintance. Approaches to indecent discourse are likewise dangerous. Therefore, when anything of this sort happens, use the first fit opportunity to rebuke him who makes advances that way, or, at least, by silence and blushing and a serious look show yourself to be displeased by such talk.
+</div>
 
-<h2>XXXIV</h2>
+<div class="chapters">
+<div class="header"><h2>XXXIV</h2></div>
 If you are dazzled by the semblance of any promised pleasure, guard yourself against being bewildered by it; but let the affair wait your leisure, and procure yourself some delay. Then bring to your mind both points of time—that in which you shall enjoy the pleasure, and that in which you will repent and reproach yourself, after you have enjoyed it—and set before you, in opposition to these, how you will rejoice and applaud yourself if you abstain. And even though it should appear to you a seasonable gratification, take heed that its enticements and allurements and seductions may not subdue you, but set in opposition to this how much better it is to be conscious of having gained so great a victory.
-
-<h2>XXXV</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XXXV</h2></div>
 When you do anything from a clear judgment that it ought to be done, never shrink from being seen to do it, even though the world should misunderstand it; for if you are not acting rightly, shun the action itself; if you are, why fear those who wrongly censure you?
-
-<h2>XXXVI</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XXXVI</h2></div>
 As the proposition, “either it is day or it is night,” has much force in a disjunctive argument, but none at all in a conjunctive one, so, at a feast, to choose the largest share is very suitable to the bodily appetite, but utterly inconsistent with the social spirit of the entertainment. Remember, then, when you eat with another, not only the value to the body of those things which are set before you, but also the value of proper courtesy toward your host.
-
-<h2>XXXVII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XXXVII</h2></div>
 If you have assumed any character beyond your strength, you have both demeaned yourself ill in that and quitted one which you might have supported.
-
-<h2>XXXVIII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XXXVIII</h2></div>
 As in walking you take care not to tread upon a nail, or turn your foot, so likewise take care not to hurt the ruling faculty of your mind. And if we were to guard against this in every action, we should enter upon action more safely.
-
-<h2>XXXIX</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XXXIX</h2></div>
 The body is to everyone the proper measure of its possessions, as the foot is of the shoe. If, therefore, you stop at this, you will keep the measure; but if you move beyond it, you must necessarily be carried forward, as down a precipice; as in the case of a shoe, if you go beyond its fitness to the foot, it comes first to be gilded, then purple, and then studded with jewels. For to that which once exceeds the fit measure there is no bound.
-
-<h2>XL</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XL</h2></div>
 Women from fourteen years old are flattered by men with the title of mistresses. Therefore, perceiving that they are regarded only as qualified to give men pleasure, they begin to adorn themselves, and in that to place all their hopes. It is worth while, therefore, to try that they may perceive themselves honored only so far as they appear beautiful in their demeanor and modestly virtuous.
-
-<h2>XLI</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLI</h2></div>
 It is a mark of want of intellect to spend much time in things relating to the body, as to be immoderate in exercises, in eating and drinking, and in the discharge of other animal functions. These things should be done incidentally and our main strength be applied to our reason.
-
-<h2>XLII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLII</h2></div>
 When any person does ill by you, or speaks ill of you, remember that he acts or speaks from an impression that it is right for him to do so. Now it is not possible that he should follow what appears right to you, but only what appears so to himself. Therefore, if he judges from false appearances, he is the person hurt, since he, too, is the person deceived. For if anyone takes a true proposition to be false, the proposition is not hurt, but only the man is deceived. Setting out, then, from these principles, you will meekly bear with a person who reviles you, for you will say upon every occasion, “It seemed so to him.”
-
-<h2>XLIII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLIII</h2></div>
 Everything has two handles: one by which it may be borne, another by which it cannot. If your brother acts unjustly, do not lay hold on the affair by the handle of his injustice, for by that it cannot be borne, but rather by the opposite—that he is your brother, that he was brought up with you; and thus you will lay hold on it as it is to be borne.
-
-<h2>XLIV</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLIV</h2></div>
 These reasonings have no logical connection: “I am richer than you, therefore I am your superior.” “I am more eloquent than you, therefore I am your superior.” The true logical connection is rather this: “I am richer than you, therefore my possessions must exceed yours.” “I am more eloquent than you, therefore my style must surpass yours.” But you, after all, consist neither in property nor in style.
-
-<h2>XLV</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLV</h2></div>
 Does anyone bathe hastily? Do not say that he does it ill, but hastily. Does anyone drink much wine? Do not say that he does ill, but that he drinks a great deal. For unless you perfectly understand his motives, how should you know if he acts ill? Thus you will not risk yielding to any appearances but such as you fully comprehend.
-
-<h2>XLVI</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLVI</h2></div>
 Never proclaim yourself a philosopher, nor make much talk among the ignorant about your principles, but show them by actions. Thus, at an entertainment, do not discourse how people ought to eat, but eat as you ought. For remember that thus Socrates also universally avoided all ostentation. And when persons came to him and desired to be introduced by him to philosophers, he took them and introduced them; so well did he bear being overlooked. So if ever there should be among the ignorant any discussion of principles, be for the most part silent. For there is great danger in hastily throwing out what is undigested. And if anyone tells you that you know nothing, and you are not nettled at it, then you may be sure that you have really entered on your work. For sheep do not hastily throw up the grass to show the shepherds how much they have eaten, but, inwardly digesting their food, they produce it outwardly in wool and milk. Thus, therefore, do you not make an exhibition before the ignorant of your principles, but of the actions to which their digestion gives rise.
-
-<h2>XLVII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLVII</h2></div>
 When you have learned to nourish your body frugally, do not pique yourself upon it; nor, if you drink water, be saying upon every occasion, “I drink water.” But first consider how much more frugal are the poor than we, and how much more patient of hardship. If at any time you would inure yourself by exercise to labor and privation, for your own sake and not for the public, do not attempt great feats; but when you are violently thirsty, just rinse your mouth with water, and tell nobody.
-
-<h2>XLVIII</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLVIII</h2></div>
 The condition and characteristic of a vulgar person is that he never looks for either help or harm from himself, but only from externals. The condition and characteristic of a philosopher is that he looks to himself for all help or harm. The marks of a proficient are that he censures no one, praises no one, blames no one, accuses no one; says nothing concerning himself as being anybody or knowing anything. When he is in any instance hindered or restrained, he accuses himself; and if he is praised, he smiles to himself at the person who praises him; and if he is censured, he makes no defense. But he goes about with the caution of a convalescent, careful of interference with anything that is doing well but not yet quite secure. He restrains desire; he transfers his aversion to those things only which thwart the proper use of our own will; he employs his energies moderately in all directions; if he appears stupid or ignorant, he does not care; and, in a word, he keeps watch over himself as over an enemy and one in ambush.
-
-<h2>XLIX</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>XLIX</h2></div>
 When anyone shows himself vain on being able to understand and interpret the works of Chrysippus,7 say to yourself: “Unless Chrysippus had written obscurely, this person would have had nothing to be vain of. But what do I desire? To understand nature, and follow her. I ask, then, who interprets her; and hearing that Chrysippus does, I have recourse to him. I do not understand his writings. I seek, therefore, one to interpret them.” So far there is nothing to value myself upon. And when I find an interpreter, what remains is to make use of his instructions. This alone is the valuable thing. But if I admire merely the interpretation, what do I become more than a grammarian, instead of a philosopher, except, indeed, that instead of Homer I interpret Chrysippus? When anyone, therefore, desires me to read Chrysippus to him, I rather blush when I cannot exhibit actions that are harmonious and consonant with his discourse.
-
-<h2>L</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>L</h2></div>
 Whatever rules you have adopted, abide by them as laws, and as if you would be impious to transgress them; and do not regard what anyone says of you, for this, after all, is no concern of yours. How long, then, will you delay to demand of yourself the noblest improvements, and in no instance to transgress the judgments of reason? You have received the philosophic principles with which you ought to be conversant; and you have been conversant with them. For what other master, then, do you wait as an excuse for this delay in self-reformation? You are no longer a boy but a grown man. If, therefore, you will be negligent and slothful, and always add procrastination to procrastination, purpose to purpose, and fix day after day in which you will attend to yourself, you will insensibly continue to accomplish nothing and, living and dying, remain of vulgar mind. This instant, then, think yourself worthy of living as a man grown up and a proficient. Let whatever appears to be the best be to you an inviolable law. And if any instance of pain or pleasure, glory or disgrace, be set before you, remember that now is the combat, now the Olympiad comes on, nor can it be put off; and that by one failure and defeat honor may be lost or—won. Thus Socrates became perfect, improving himself by everything, following reason alone. And though you are not yet a Socrates, you ought, however, to live as one seeking to be a Socrates.
-
-<h2>LI</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>LI</h2></div>
 The first and most necessary topic in philosophy is the practical application of principles, as, We ought not to lie; the second is that of demonstrations as, Why it is that we ought not to lie; the third, that which gives strength and logical connection to the other two, as, Why this is a demonstration. For what is demonstration? What is a consequence? What a contradiction? What truth? What falsehood? The third point is then necessary on account of the second; and the second on account of the first. But the most necessary, and that whereon we ought to rest, is the first. But we do just the contrary. For we spend all our time on the third point and employ all our diligence about that, and entirely neglect the first. Therefore, at the same time that we lie, we are very ready to show how it is demonstrated that lying is wrong.
 Upon all occasions we ought to have these maxims ready at hand:
 
@@ -342,8 +393,9 @@ And this third:
 
 “O Crito, if it thus pleases the gods, thus let it be.”10
 “Anytus and Melitus may kill me indeed; but hurt me they cannot.”11
-
-<h2>NOTES</h2>
+</div>
+<div class="chapters">
+<div class="header"><h2>NOTES</h2></div>
 
 1 Happiness, the effect of virtue, is the mark which God has set up for us to aim at. Our missing it is no work of His; nor so properly anything real, as a mere negative and failure of our own.
 2 Chapter XV of the third book of the Discourses, which, with the exception of some very trifling differences, is the same as chapter XXIX of the Enchiridion.
