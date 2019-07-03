@@ -1,0 +1,214 @@
+/* RESETS */
+
+html{
+	height: 100%;
+
+}
+
+body{
+	height: 100%;
+
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: 'digi';
+  src: url('digi.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'uni-thin';
+  src: url('UniversLTStd-ThinUltraCn.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ocr-idk';
+  src: url('ocr-idk.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'twntyfrstcntry';
+  src: url('twntyfrstcntry.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*ANIMATIONS*/
+
+@keyframes scrolling
+{
+  0%  {transform:translateX(100%);}
+  100%{transform:translateX(-100%);}
+
+}
+
+@keyframes colorchange
+    {
+      0%   {background: #F3FFFF;}
+      25%  {background: #F6F3FF;}
+      50%  {background: #FFF3F3;}
+      75%  {background: #F4FFF3;}
+      100% {background: #F3FFFF;}
+    }
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #F3FFFF;}
+      25%  {background: #F6F3FF;}
+      50%  {background: #FFF3F3;}
+      75%  {background: #F4FFF3;}
+      100% {background: #F3FFFF;}
+    }
+
+@keyframes rotation
+    {
+      0%    {transform:rotate(0deg);}
+      25%  {transform:rotate(90deg);}
+      50%  {transform:rotate(180deg);}
+      75%  {transform:rotate(270deg);}
+      100% {transform:rotate(360deg);}
+    }
+
+@-webkit-keyframes rotation /* Safari and Chrome - necessary duplicate */
+    {
+      0%    {transform:rotate(0deg);}
+      25%  {transform:rotate(90deg);}
+      50%  {transform:rotate(180deg);}
+      75%  {transform:rotate(270deg);}
+      100% {transform:rotate(360deg);}    
+    }
+
+/*BASE*/
+
+body {
+  font-size: 25px;
+  line-height: 1.3;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-weight: 700;*/
+  background: #C0C6C9;
+  animation: colorchange 240s infinite;
+   -webkit-animation: colorchange 240s infinite;
+  text-rendering: optimizeLegibility;
+  /*padding: 20px;*/
+}
+
+nav{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: flex-end;
+  width: 50vw;
+  left:25vw;
+  right:25vw;
+  margin: 0 auto;
+  /*height: 20vh;*/
+  /*width: 50%;*/
+  padding: 0;
+  position:fixed;
+  bottom:1vh;
+  z-index:3;
+}
+
+.link{
+  font-family: 'uni-thin';
+  font-size: 56px;
+  line-height:.8;
+  color:black;
+  /*border: 1px solid rgba(0,0,0,0.5);*/
+  /*border-radius: 3px;*/
+  padding: 4px 3px 3px 4px;
+  margin:5px;
+  display: inline-block;
+  text-transform: uppercase;
+  /*margin-bottom: 4px;*/
+  /*background: red;*/
+  letter-spacing: 3px;
+  flex-basis: 60%;
+}
+
+.wheel{
+  position:fixed;
+  /*margin-top:10%;*/
+  width:100%;
+  height:85vh;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+object{
+  width:35%;
+  min-width:400px;
+  margin: 2vh auto;
+  flex-shrink:0;
+  animation: rotation linear 60s infinite;
+}
+
+.marquee{
+  height: 50px;
+  width:100vw;
+  background: black;
+  position: fixed;
+  display: flex;
+  /*left: 35vw;*/
+  z-index: 100;
+  margin-left: 50vw;
+  transform-origin: 50vw 0;
+  -webkit-transform: rotate(90deg) translate(50%);
+  -moz-transform: rotate(90deg) translate(50%);
+  -ms-transform: rotate(90deg) translate(50%);
+  -o-transform: rotate(90deg) translate(50%);
+  transform: rotate(90deg) translate(50%);
+  /*writing-mode: vertical-rl;*/
+  text-transform: uppercase;
+  overflow: hidden;
+  animation: t;
+
+}
+
+.marquee p{
+  font-family:'uni-thin';
+  position:relative;
+  top:15%;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 3px;
+  animation: scrolling linear 30s infinite ;
+
+}
+
+@media screen and (max-width: 600px){
+
+  .marquee{
+    width: 400%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    transform-origin: top center;
+    transform: translateX(0%);
+    margin-left: 0;
+    font-size: 50%;
+  }
+
+}

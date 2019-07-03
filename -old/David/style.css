@@ -1,0 +1,88 @@
+	#stamp {
+		display: none;
+	}
+
+	#surf {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 99;
+	}
+
+	@font-face {
+		/* font-family: "TWNTYFRSTCNTRY"; */
+		/* src: url("twntyfrstcntry.otf"); */
+	}
+
+	::-moz-selection {
+		background: red;
+	}
+
+	::selection {
+		background: red;
+	}
+
+	button {
+		visibility: hidden;
+	}
+
+	html {
+		/* font-family: TWNTYFRSTCNTRY, Georgia, serif; */
+		font-family: Georgia, serif;
+		font-size: 4vw;
+	}
+
+	body {
+		background: linear-gradient(lightgreen, white, lightgreen);
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+
+
+
+	.header {
+		text-align: center;
+		position: sticky;
+		top: 10px;
+	}
+
+	.title {
+		width: 90vw;
+	}
+
+	.chapters {
+		width: 90vw;
+		line-height: 1.2em;
+		padding: 2vw;
+	}
+
+	/* width */
+	::-webkit-scrollbar {
+		width: 30px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: linear-gradient(lightgreen, white, lightgreen);
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: red;
+		height: 40px;
+	}
+
+	@media screen and (max-width: 600px) {
+		body {
+			font-size: 5vw;
+		}
+	}
