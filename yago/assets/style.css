@@ -19,6 +19,7 @@ body{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 36px;
 }
 
 /* TYPOGRAPHY */
@@ -51,7 +52,38 @@ body{
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'neuton';
+  src: url('Neuton-Extralight.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arnhem';
+  src: url('ArnhemPro-Blond.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*ANIMATIONS*/
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 
 @keyframes scrolling
 {
@@ -102,13 +134,173 @@ body {
   font-size: 25px;
   line-height: 1.3;
   font-family: Arial, Helvetica, sans-serif;
-  /*font-weight: 700;*/
-  background: #C0C6C9;
-  animation: colorchange 240s infinite;
-   -webkit-animation: colorchange 240s infinite;
+background: linear-gradient(270deg, #d4dbfe, #ffd1d1, #deffd1);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 59s ease infinite;
+-moz-animation: AnimationName 59s ease infinite;
+animation: AnimationName 59s ease infinite;
+
   text-rendering: optimizeLegibility;
-  /*padding: 20px;*/
+background-blend-mode: multiply;
 }
+
+a{
+  /*text-align:center;*/
+  font-family: "times new roman", serif;
+  font-size:1em;
+  /*font-weight:100;*/
+  line-height: 1em;
+  padding-bottom:1.1em;
+  color:#373737;
+  letter-spacing: 2px;
+}
+
+a:hover{
+
+}
+
+/*.container{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}*/
+
+h2{
+  font-family: 'uni-thin';
+  font-size:2.5em;
+  font-weight:normal;
+  letter-spacing:3px;
+  color:#373737;
+}
+
+p{
+  font-family: "times new roman", serif;
+  font-size:1em;
+  /*font-weight:100;*/
+  line-height: 1em;
+  padding-bottom:1.1em;
+  color:#373737;
+  letter-spacing: 2px;
+}
+
+
+ul{
+  font-family: "Times New Roman", serif;
+  font-size:1em;
+  line-height: 1.1em;
+  color:#373737;
+  list-style-type: circle;
+  letter-spacing: 2px;
+
+
+}
+
+
+.first{
+  z-index:1;
+  width:80vw;
+  margin-top:100vh;
+  padding:3vw;
+  mix-blend-mode: multiply;
+
+}
+
+.section{
+  z-index:1;
+  width:80vw;
+  padding:3vw;
+  mix-blend-mode: multiply;
+
+}
+
+.wheel{
+  /*z-index:-10;*/
+  position:fixed;
+  top:0;
+  /*margin-top:10%;*/
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/*object{
+  width:45%;
+  min-width:400px;
+  margin: 2vh auto;
+  flex-shrink:0;
+  animation: rotation linear 60s infinite;
+}*/
+
+img{
+  z-index:-10;
+  width:55%;
+  min-width:400px;
+  margin: 2vh auto;
+  flex-shrink:0;
+  animation: rotation linear 60s infinite;
+  /*filter: drop-shadow(5px 5px 5px #000);*/
+}
+
+.top{
+    height:100%;
+    position: absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:space-between;
+    z-index:1;
+}
+
+.top .item{
+  opacity:0;
+    -webkit-transition: .4s ease-in-out opacity;
+    -moz-transition: .4s ease-in-out opacity;
+    -o-transition: .4s ease-in-out opacity;
+    transition: .4s ease-in-out opacity;
+}
+.top .item:hover{
+  opacity:1;
+
+}
+
+.bottom{
+    width:100%;
+    height:100%;
+    position: absolute;
+    /*top:0;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:space-between;
+    z-index:-1;
+}
+
+
+
+.item {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:70%;
+    background: #C0C6C9;
+    animation: colorchange 240s infinite;
+    -webkit-animation: colorchange 240s infinite;
+    padding:10px;    
+}
+
+.item p {
+    font-size: 36px;
+    font-family: 'uni-thin';
+
+}
+
 
 nav{
   display:flex;
@@ -136,56 +328,39 @@ nav{
   /*border: 1px solid rgba(0,0,0,0.5);*/
   /*border-radius: 3px;*/
   padding: 4px 3px 3px 4px;
-  margin:5px;
+  margin:0px auto;
   display: inline-block;
   text-transform: uppercase;
+  text-align:center;
   /*margin-bottom: 4px;*/
   /*background: red;*/
   letter-spacing: 3px;
   flex-basis: 60%;
 }
 
-.wheel{
-  position:fixed;
-  /*margin-top:10%;*/
-  width:100%;
-  height:85vh;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:center;
-  align-items:center;
-}
 
-object{
-  width:35%;
-  min-width:400px;
-  margin: 2vh auto;
-  flex-shrink:0;
-  animation: rotation linear 60s infinite;
-}
 
 .marquee{
   height: 50px;
   width:100vw;
   background: black;
-  position: fixed;
-  display: flex;
+  /*position: fixed;*/
+  /*display: flex;*/
   /*left: 35vw;*/
-  z-index: 100;
-  margin-left: 50vw;
-  transform-origin: 50vw 0;
-  -webkit-transform: rotate(90deg) translate(50%);
-  -moz-transform: rotate(90deg) translate(50%);
-  -ms-transform: rotate(90deg) translate(50%);
-  -o-transform: rotate(90deg) translate(50%);
-  transform: rotate(90deg) translate(50%);
+  /*z-index: 100;*/
+  /*margin-left: 50vw;*/
+  /*transform-origin: 50vw 0;*/
+  /*-webkit-transform: rotate(90deg) translate(50%);*/
+  /*-moz-transform: rotate(90deg) translate(50%);*/
+  /*-ms-transform: rotate(90deg) translate(50%);*/
+  /*-o-transform: rotate(90deg) translate(50%);*/
+  /*transform: rotate(90deg) translate(50%);*/
   /*writing-mode: vertical-rl;*/
   text-transform: uppercase;
   overflow: hidden;
-  animation: t;
-
+  /*animation: t;*/
 }
+
 
 .marquee p{
   font-family:'uni-thin';
@@ -198,17 +373,17 @@ object{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
 
-  .marquee{
-    width: 400%;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    transform-origin: top center;
-    transform: translateX(0%);
-    margin-left: 0;
-    font-size: 50%;
-  }
+
+.first{
+  width:100vw;
+
+}
+
+.section{
+  width:100vw;
+
+}
 
 }
