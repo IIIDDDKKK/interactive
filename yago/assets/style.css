@@ -8,14 +8,11 @@ html{
 }
 
 body{
-	/*height: 100%;*/
-  background-size: auto 100%;
-  background: linear-gradient(270deg, #d4dbfe, #ffd1d1, #deffd1);
-background-size: 600% 600%;
 
--webkit-animation: AnimationName 59s ease infinite;
--moz-animation: AnimationName 59s ease infinite;
-animation: AnimationName 59s ease infinite;
+background: #d4dbfe;
+-webkit-animation: colorchange 59s ease infinite;
+-moz-animation: colorchange 59s ease infinite;
+animation: colorchange 59s ease infinite;
 
 }
 
@@ -103,20 +100,18 @@ animation: AnimationName 59s ease infinite;
 
 @keyframes colorchange
     {
-      0%   {background: #D4F6FE;}
-      25%  {background: #FDD4FE;}
-      50%  {background: #FDFED4;}
-      75%  {background: #D4FEDB;}
-      100% {background: #D4F6FE;}
+      0%   {background: #FFF2F2;}
+      33%  {background: #F2FFF4;}
+      66%  {background: #F2F2FF;}
+      100% {background: #FFF2F2;}
     }
 
 @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-      0%   {background: #D4F6FE;}
-      25%  {background: #FDD4FE;}
-      50%  {background: #FDFED4;}
-      75%  {background: #D4FEDB;}
-      100% {background: #D4F6FE;}
+      0%   {background: #FFF2F2;}
+      33%  {background: #F2FFF4;}
+      66%  {background: #F2F2FF;}
+      100% {background: #FFF2F2;}
     }
 
 @keyframes rotation
@@ -156,10 +151,17 @@ a{
   padding-bottom:1.1em;
   color:#373737;
   letter-spacing: 2px;
+  border: 2px solid #373737;
+  border-radius: 6px;
+  padding: 4px 7px;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 8px;
+  text-decoration: none;
 }
 
 a:hover{
-
+  opacity:50%;
 }
 
 /*.container{
@@ -222,7 +224,6 @@ ul{
   position:fixed;
   top:0;
   padding-bottom:4vh;
-  /*margin-top:10%;*/
   width:100%;
   height:100vh;
   display:flex;
@@ -243,7 +244,8 @@ ul{
 
 img{
   z-index:-10;
-  width:55%;
+  max-width:90vw;
+  max-height:90vh;
   /*min-width:400px;*/
   flex-shrink:0;
   animation: rotation linear 60s infinite;
@@ -390,6 +392,7 @@ animation: colorchange 59s ease infinite;
 .wheel{
   position:static;
   z-index: 3;
+  width:100%;
 }
 
 .first{
