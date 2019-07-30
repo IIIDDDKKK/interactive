@@ -208,7 +208,7 @@ p{
   font-family: "times new roman", serif;
   font-size:1em;
   /*font-weight:100;*/
-  line-height: 1em;
+  line-height: 1.1em;
   padding-bottom:1.1em;
   color:#373737;
   letter-spacing: 2px;
@@ -229,7 +229,7 @@ ul{
 
 #about{
   z-index:1;
-  width:80vw;
+  width:75vw;
   margin-top:100vh;
   padding:3vw;
   mix-blend-mode: multiply;
@@ -238,7 +238,7 @@ ul{
 
 #clients, #services, #contact{
   z-index:1;
-  width:80vw;
+  width:75vw;
   padding:3vw;
   mix-blend-mode: multiply;
 
