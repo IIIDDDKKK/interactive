@@ -256,6 +256,7 @@ ul{
   flex-wrap: wrap;
   justify-content:center;
   align-items:center;
+  overflow: hidden;
 }
 
 
@@ -340,7 +341,7 @@ nav{
   /*flex-wrap:wrap;*/
   /*justify-content:center;*/
   /*align-items: center;*/
-  width: 20vw;
+  /*width: 20vw;*/
   text-align: right;
   right:2vw;
   /*left:25vw;*/
@@ -409,21 +410,21 @@ nav{
 @media screen and (max-width: 500px){
 
 
-body{
+/*body{
 
 background: #d4dbfe;
 -webkit-animation: colorchange 59s ease infinite;
 -moz-animation: colorchange 59s ease infinite;
 animation: colorchange 59s ease infinite;
 
-}
+}*/
 
-.wheel{
+/*.wheel{
   position:static;
   z-index: 3;
   width:100%;
   top:1vh;
-}
+}*/
 
 .first{
   width:100vw;
@@ -431,7 +432,7 @@ animation: colorchange 59s ease infinite;
 
 }
 
-.section{
+#about, #clients, #services, #contact{
   width:100vw;
 
 }
@@ -441,7 +442,7 @@ animation: colorchange 59s ease infinite;
 }*/
 
 a {
-  font-size: 24px;
+  font-size: .8em;
 }
 
 p {
