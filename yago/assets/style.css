@@ -424,6 +424,7 @@ animation: colorchange 59s ease infinite;
   z-index: 3;
   width:100%;
   top:1vh;
+
 }
 
 .first{
@@ -438,9 +439,9 @@ animation: colorchange 59s ease infinite;
 
 }
 
-/*img{
-  width:110;
-}*/
+img{
+  width:140vw;
+}
 
 a {
   font-size: .8em;
