@@ -247,15 +247,15 @@ ul{
 .wheel{
   /*z-index:-10;*/
   position:fixed;
-  top:1vh;
-  padding-bottom:4vh;
+  top:0vh;
+  padding-bottom:10vh;
   width:100%;
   height:100vh;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
   overflow: hidden;
 }
 
@@ -419,12 +419,12 @@ animation: colorchange 59s ease infinite;
 
 }*/
 
-/*.wheel{
+.wheel{
   position:static;
   z-index: 3;
   width:100%;
   top:1vh;
-}*/
+}
 
 .first{
   width:100vw;
@@ -434,6 +434,7 @@ animation: colorchange 59s ease infinite;
 
 #about, #clients, #services, #contact{
   width:100vw;
+  margin-top:0;
 
 }
 
