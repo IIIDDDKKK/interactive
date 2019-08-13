@@ -143,10 +143,8 @@ body {
 }
 
 #contact a{
-  /*text-align:center;*/
   font-family: "times new roman", serif;
   font-size:1em;
-  /*font-weight:100;*/
   line-height: 1em;
   padding-bottom:1.1em;
   color:#373737;
@@ -162,43 +160,27 @@ body {
 
 a:hover{
   border-bottom: 3px solid #373737;
-  /*transition: color .5s;*/
 }
 
-/*.container{
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-}*/
 
 a{
   display:inline;
-  /*padding-bottom: 4px;*/
-  /*margin-left:7px;*/
-  /*margin-right:7px;*/
   font-family: 'times new roman', serif;
   font-size:.7em;
   font-weight:normal;
-  /*text-transform: uppercase;*/
   text-decoration: none;
   letter-spacing:2px;
   color:#373737;
-  transition: .5s;
   border-bottom: 3px solid transparent;
   transition: border-bottom ease-in-out .5s;
-  /*font-style: italic; */
 
 }
 
 h2{
   display:inline-block;
-  /*padding-left:2em;*/
-  /*margin-bottom:.5em;*/
   font-family: 'uni-thin', serif;
   font-size:2.5em;
   font-weight:normal;
-  /*text-transform: uppercase;*/
   text-decoration: none;
   letter-spacing:2px;
   color:#373737;
@@ -207,7 +189,6 @@ h2{
 p{
   font-family: "times new roman", serif;
   font-size:1em;
-  /*font-weight:100;*/
   line-height: 1.1em;
   padding-bottom:1.1em;
   color:#373737;
@@ -245,7 +226,6 @@ ul{
 }
 
 .wheel{
-  /*z-index:-10;*/
   position:fixed;
   top:0vh;
   padding-bottom:10vh;
@@ -260,22 +240,11 @@ ul{
 }
 
 
-/*object{
-  width:45%;
-  min-width:400px;
-  margin: 2vh auto;
-  flex-shrink:0;
-  animation: rotation linear 60s infinite;
-}*/
-
 img{
   z-index:-10;
   width:110vw;
-  /*height:110vh;*/
-  /*min-width:400px;*/
   flex-shrink:0;
   animation: rotation linear 60s infinite;
-  /*filter: drop-shadow(5px 5px 5px #000);*/
 }
 
 .top{
@@ -289,14 +258,14 @@ img{
 }
 
 .top .item{
-  opacity:0;
+    opacity:0;
     -webkit-transition: .4s ease-in-out opacity;
     -moz-transition: .4s ease-in-out opacity;
     -o-transition: .4s ease-in-out opacity;
     transition: .4s ease-in-out opacity;
 }
 .top .item:hover{
-  opacity:1;
+    opacity:1;
 
 }
 
@@ -304,7 +273,6 @@ img{
     width:100%;
     height:100%;
     position: absolute;
-    /*top:0;*/
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -331,27 +299,35 @@ img{
 
 }
 
-
-nav{
-  /*position:sticky;*/
-  /*display:inline-block;*/
-  /*display:flex;*/
-  position:fixed;
-  /*flex-direction:column;*/
-  /*flex-wrap:wrap;*/
-  /*justify-content:center;*/
-  /*align-items: center;*/
-  /*width: 20vw;*/
+.dropdown{
+  position: fixed;
+  display: inline-block;
   text-align: right;
   right:2vw;
-  /*left:25vw;*/
-  /*right:25vw;*/
-  /*margin: 0 auto;*/
   height: 20vh;
-  /*width: 50%;*/
   padding: 0;
   top:1vh;
   z-index:1;
+  cursor:pointer;
+
+}
+
+.dropdown-content{
+  opacity:0;
+  position:fixed;
+  text-align: right;
+  right:2vw;
+  height: 20vh;
+  padding: 0;
+  top:7vh;
+  z-index:1;
+  transition: visibility ease-in-out .5s;
+}
+
+.dropdown:hover .dropdown-content{
+  opacity:1;
+  transition:.8s;
+
 }
 
 .link{
@@ -359,65 +335,20 @@ nav{
   font-size: 56px;
   line-height:.8;
   color:black;
-  /*border: 1px solid rgba(0,0,0,0.5);*/
-  /*border-radius: 3px;*/
   padding: 4px 3px 3px 4px;
   margin:0px auto;
   display: inline-block;
   text-transform: uppercase;
   text-align:center;
-  /*margin-bottom: 4px;*/
-  /*background: red;*/
   letter-spacing: 3px;
   flex-basis: 60%;
 }
 
 
-
-.marquee{
-  height: 50px;
-  width:100vw;
-  background: black;
-  /*position: fixed;*/
-  /*display: flex;*/
-  /*left: 35vw;*/
-  /*z-index: 100;*/
-  /*margin-left: 50vw;*/
-  /*transform-origin: 50vw 0;*/
-  /*-webkit-transform: rotate(90deg) translate(50%);*/
-  /*-moz-transform: rotate(90deg) translate(50%);*/
-  /*-ms-transform: rotate(90deg) translate(50%);*/
-  /*-o-transform: rotate(90deg) translate(50%);*/
-  /*transform: rotate(90deg) translate(50%);*/
-  /*writing-mode: vertical-rl;*/
-  text-transform: uppercase;
-  overflow: hidden;
-  /*animation: t;*/
-}
-
-
-.marquee p{
-  font-family:'uni-thin';
-  position:relative;
-  top:15%;
-  font-size: 36px;
-  color: white;
-  letter-spacing: 3px;
-  animation: scrolling linear 30s infinite ;
-
-}
-
 @media screen and (max-width: 500px){
 
 
-/*body{
 
-background: #d4dbfe;
--webkit-animation: colorchange 59s ease infinite;
--moz-animation: colorchange 59s ease infinite;
-animation: colorchange 59s ease infinite;
-
-}*/
 
 .wheel{
   position:static;
